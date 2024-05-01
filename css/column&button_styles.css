@@ -1,0 +1,186 @@
+
+/* 3 COLUMN SECTION */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4px;
+    margin-right: 2px;
+
+}
+.column {
+    flex: 33%;
+    max-width: 33.33%; /* limited the 3rd column at 33% for some reason */
+    padding: 0px 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.img_container {
+    position: relative;
+    display: inline-block; /* Ensure inline-block for positioning */
+}
+
+.img_container:hover .caption-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.social-item {
+    position: absolute;
+    filter: invert(100%);
+    top: 8px; /* Adjust the top position as needed */
+    right: 8px; /* Adjust the right position as needed */
+    z-index: 1; /* Ensure the icon appears above other content */
+    opacity: 0.80;
+    width: 30px;
+    height: 26px
+
+
+}
+
+.caption-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s; /* Updated transition property */
+
+}
+
+
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+        .column_odd{
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+/* 2 COLUMN SECTION */
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4px;
+    margin-right: 2px;
+    margin-top: 3vw;
+}
+.column2 {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0px 3vw;
+    text-align: left;
+}
+
+.column2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.img_container2 {
+    position: relative;
+    display: inline-block; /* Ensure inline-block for positioning */
+}
+
+.img_container2:hover .caption-text2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.social-item2 {
+    position: absolute;
+    filter: invert(100%);
+    top: 8px; /* Adjust the top position as needed */
+    right: 8px; /* Adjust the right position as needed */
+    z-index: 1; /* Ensure the icon appears above other content */
+    opacity: 0.80;
+    width: 30px;
+    height: 26px;
+}
+
+.caption-text2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(24, 24, 24, 0.6); /* Adjust the background color and opacity */
+    color: #000000;
+    text-align: center;
+    padding: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s; /* Updated transition property */
+}
+
+/* Responsive layout - makes a single column layout */
+@media screen and (max-width: 1000px) {
+    .column2 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* BUTTONS */
+.button_1, .button_1b , .button_1c {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 5px 10px; /* Adjust padding as needed */
+    margin: 5px;
+    min-width: 80px; /* Adjust the value according to your needs */
+    white-space: nowrap; /* Prevent text from wrapping */
+    line-height: 1.75;
+    transition: transform 0.2s ease, background-color 0.5s ease, color 0.5s ease; /* Apply transition to transform, background-color, and color properties */
+}
+
+.button_1:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+.button_1b:hover {
+    background-color: red;
+    color: white;
+}
+
+.button_1c:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+}
+
+.button_1c {
+    color: white;
+    background-color: black;
+}
+.button_1c:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
+    background-color: red; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+

@@ -1,0 +1,141 @@
+
+
+
+/*SOCIAL BAR */
+.social_bar {
+    display: inline;
+    align-items: center;
+}
+
+.social_bar img {
+    width: 40px; /* Adjust the percentage as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.social_bar img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+
+}
+
+
+
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: var(--secondary-bg-color);
+    overflow: hidden;
+    padding-inline: 3vw;
+    padding-block: 0px; /*see the logo*/
+    display: flex;
+    justify-content: end; /* Align links to the right */
+}
+
+.navbar a {
+    display: inline-block;
+    color: grey;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-inline: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Added transitions for background-color and color */
+}
+.navbar div {
+    font-size: 3em;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    font-size: 2em;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev {
+    right: 95.80%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(219, 219, 219, 0.18);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 20px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 20px 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: black;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; /* Keeps the styles after the animation finishes */
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
