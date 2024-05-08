@@ -1,0 +1,55 @@
+<!-- product_details.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main_styles.css">
+    <link rel="stylesheet" href="css/user_bar_styles.css">
+    <link rel="stylesheet" href="css/column&button_styles.css">
+    <link rel="stylesheet" href="css/responsive_styles.css">
+    <script src="js/product_details.js"></script>
+    <!-- Add any additional CSS stylesheets here -->
+
+    <title>Product Details</title>
+</head>
+<body>
+<section class="navbar">
+    <img src="media/home/logo.png" style="width: 80px; height: 80px; margin-right: auto; margin-block: 20px">
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="product_catalogue.html" class="dropbtn">Products</a>
+            <div class="dropdown-content">
+                <a href="product_catalogue.html">item 1</a>
+                <a href="#">item 2</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="about.html" class="dropbtn">About</a>
+            <div class="dropdown-content">
+                <a href="product_catalogue.html">item 1</a>
+                <a href="#">item 2</a>
+            </div>
+        </li>
+    </ul>
+</section>
+
+
+<section class="sub_content" style="margin: 0;">
+    <div class="row" id="productDetailsContainer"> <!-- Product details will be loaded here dynamically --></div>
+</section>
+
+
+<footer>
+    2023 Andreas Krauss. All rights reserved. <span class="responsive_remove" style="margin-left: 5px">  No part of this site may be reproduced without written permission. </span>
+    <a href="product_catalogue.html" class="button_1" style="margin-left: auto; text-align: center; background-color: black; color: white; min-width: 180px"> return to catalog <img src="media/icons/go-back.png" alt="" style="width: 30px; margin: 0; filter: invert(100%)"> </a>
+    </a>
+</footer>
+
+</body>
+</html>

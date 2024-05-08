@@ -24,31 +24,82 @@
 
 /* NAVIGATION BAR */
 .navbar {
-    background-color: var(--secondary-bg-color);
-    overflow: hidden;
-    padding-inline: 3vw;
-    padding-block: 0px; /*see the logo*/
+    background-color: var(--secondary-bg-color); /* Background color */
+    padding: 10px 20px; /* Adjust padding as needed */
     display: flex;
-    justify-content: end; /* Align links to the right */
+    align-items: center;
 }
 
-.navbar a {
+/* Navigation links */
+.nav-links {
+    list-style-type: none; /* Remove bullet points */
+}
+
+.nav-links li {
     display: inline-block;
-    color: grey;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 20px;
-    margin-inline: 20px;
-    transition: background-color 0.3s, color 0.3s; /* Added transitions for background-color and color */
-}
-.navbar div {
-    font-size: 3em;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
+.nav-links li a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px;
+    margin-inline: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    min-width: 80px;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(199, 199, 199, 0.7);
     color: black;
 }
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown button */
+.dropbtn {
+    display: block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0);
+    z-index: 1; /* Ensure the dropdown stays above other content */
+    margin-inline: 0;
+    width: 100%;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: grey;
+    padding: 0;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Added transitions for background-color and color */
+    background-color: white;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(199, 199, 199, 0.7);
+    color: black;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 
 /* Slideshow container */
 .slideshow-container {
